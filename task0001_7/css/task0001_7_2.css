@@ -1,0 +1,347 @@
+	*{
+		margin: 0px;
+	}
+
+	body{
+		min-width: 980px;
+		background-color: #eee;
+	}
+	.center{
+		width: 980px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	header{
+		width: 100%;
+		height: 80px;
+		background-color: purple;
+		display: flex;
+		align-items: flex-end;
+	}
+	header>div
+	{
+		display: flex;
+		justify-content: space-between;
+	}
+	#logo{
+		font-size: 20px;
+		font-family: sans-serif;
+		color: white;
+	}
+	#h-menu{
+		list-style: none;
+		padding: 0;
+		display: flex;
+		align-items: flex-end;
+		margin-bottom: 5px;
+	}
+	#h-menu li a{
+		display: block;
+		font-size: 14px;
+		font-family: 宋体;
+		color: white;
+	    margin-left: 28px;
+	    text-decoration: initial;
+	}
+	#h-icon{
+		display: inline-block;
+		margin-left: -40px;
+		padding-right: 10px;
+	}
+	#h-icon img{
+		vertical-align: top;
+	}
+
+/*内容区container的样式*/
+	#container{
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+	#left{
+		width: 700px;
+	}
+	#right{
+		width: 270px;
+	}
+
+	/*left部分*/
+	#left article{
+		width: 660;
+		background-color: white;
+		padding: 20px;
+		margin-bottom: 10px;
+		position: relative;
+	}
+	#left article h1{
+		font-size: 16px;
+		color: #ff00ff;
+		margin-bottom: 10px;
+	}
+	#left article h2{
+		font-size: 12px;
+		color: #666;
+		margin-bottom: 10px;
+	}
+	#left article p{
+		font-size: 12px;
+	}
+	#left article h3{
+		color: #ccc;
+		font-weight: normal;
+		font-size: 12px;
+		margin-top: 40px;
+		text-align: end;
+	}
+	.aside{
+		position: absolute;
+		left: -60px;
+		top:20px;
+		color: white;
+	}
+	.date,.css{
+		width: 60px;
+		height: 45px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.date{
+		background-color: purple;
+		
+	}
+	.css{
+		background-color: #ff00ff;
+	}
+	#buttons{
+		display: flex;
+		justify-content: center;
+	}
+	#buttons>div{
+		height: 40px;
+		background-color: white;
+		margin: 0px 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#buttons>div:hover{
+		background-color: #ff00ff;
+	}
+	#first,#last,#before,#next{
+		width: 80px;
+	}
+	#one,#two,#three,#four,#num{
+		width: 40px;
+	}
+	#buttons #three{
+		background-color: #ff00ff;
+	}
+
+
+	/*right部分*/
+	#search{
+		padding: 20px;
+		background-color: white;
+		margin-bottom: 10px;
+
+	}
+	#search>div{
+		width: 230px;
+		height: 50px;
+		border: 2px solid #ddd;
+		background-image: url(../img/search.png);
+		background-repeat: no-repeat;
+		background-position: 5px 10px;
+		display: flex;
+    	justify-content: space-between;
+	}
+	#search input{
+		border: none;
+		outline: none;
+		width: 120px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 20px;
+		margin: 5px 0 5px 40px;
+		padding: 0;
+	}
+	#search button{
+		border: none;
+		background-color: #ddd;
+		color: white;
+		font-size: 25px;
+		width: 60px;
+		height: 50px;
+	}
+
+
+	#r-menu{
+		list-style: none;
+		padding: 0px;
+		margin-bottom: 10px;
+	}
+	#r-menu li{
+		width: 265px;
+		height: 50px;
+		margin: 2px 0;
+		border-left: 5px solid #cc99ff;
+		text-indent: 2em;
+		background-color: white;
+		color: #999;
+		display: flex;
+		align-items: center;
+	}
+	#r-menu li:hover{
+		border-left: 5px solid purple;
+		color: black;
+	}
+
+
+	#calendar{
+		width: 270px;
+		height: 300px;
+		background-color: white;
+		margin-bottom: 10px;
+	}
+	#calendar>div>button{
+		background-color: white;
+		border: none;
+		font-size: medium;
+		font-family: sans-serif;
+		color: #d0f;
+		font-weight: bolder;
+		margin: 0 60px;
+	}
+	#calendar>div>span{
+		color: #d0f;
+		font-weight: bold;
+	}
+	#calendar>div{
+		display: flex;
+		justify-content: center;
+		padding-top: 20px;
+	}
+	#calendar table{
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#calendar table tr{
+		display: flex;
+		border-bottom: 1px solid #ccc;
+		padding: 5px 0 8px 0;
+	}
+	#calendar table th,#calendar table td{
+		margin: 0 6px;
+		width: 18px;
+		color: #999;
+		font-size: 12px;
+		font-family: sans-serif;
+		display: inline-block;
+		text-align: center;
+	}
+
+	#targets{
+		width: 270px;
+		height: 250px;
+		background-color: white;
+		margin-bottom: 10px;
+	}
+	#targets h5{
+		color: gray;
+		font-size: 20px;
+		margin: 10px 15px;
+	}
+	#targets>div{
+		margin: 20px 15px;
+	}
+	#targets>div a{
+		color: purple;
+		display: block;
+		text-decoration: none;
+		margin-right: 5px;
+		float: left;
+	}
+	.font-a{
+		font-size: 30px;
+		font-weight: bolder;
+	}
+	.font-b{
+		font-size: 20px;
+		font-weight: bolder;
+	}
+	.font-c{
+		font-size: 15px;
+	}
+	.font-d{
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+
+
+
+
+/*以下是footer的样式*/
+	footer{
+		color: white;
+		background-color: black;
+		margin-top: 300px;
+	}
+    #f-menu{
+		list-style: none;
+		width: auto;
+		margin: 0px;
+		padding: 0px;
+		text-align: center;
+	}
+	#f-menu li{
+		display: inline-block;
+		font-size: 12px;
+		margin: 10px 12px;
+	}
+	footer hr{
+		border-color: #333;
+	}
+
+	#link-list{
+		width: 980px;
+		margin: 20px auto 100px auto;
+		display: flex;
+    }
+    #link-list div{
+        margin-right: 112px;
+	}
+	#link-list div ul{
+		list-style: none;
+		font-size: 12px;
+		padding: 0px;
+	}
+	#link-list div h1{
+		font-size: 12px;
+		margin-bottom: 20px;
+	}
+	#link-list div ul li a{
+		color: white;
+		text-decoration: initial;
+	}
+	#link-list div ul li a:hover,#link-list div ul li a.hover-s{
+		padding-bottom: 3px;
+		font-size: 16px;
+		text-decoration: underline;
+	}
+	#link-list div ul li{
+		margin: 10px 0px;
+		}
+
+	#copyright{
+		text-align: center;
+		font-size: 14px;
+		margin: 20px;
+	}
+	#f-icon{
+		text-align: center;
+	}
+	#f-icon img{
+		vertical-align: top;
+	}
