@@ -1,0 +1,176 @@
+	#practic1{
+		display: box;
+		background-color: #EEE;
+		border: 2px solid blue;
+		margin: 5px;
+		min-width:700px;
+		padding: 10px;
+
+	}
+	.threebox{
+		display: inline-block;
+		border: 1px solid #aaa;
+		vertical-align: top;
+	}
+
+
+	#practic2{
+		background-color: #EEE;
+		border: 2px solid blue;
+		margin: 5px;
+		padding: 10px;
+	}
+
+
+/*/////////////小练习 3 轮播图///////////////////*/
+	/*图片样式*/
+	#banner{
+		width: 800px;
+		height: 400px;
+		margin: 10px auto;
+		background-color: #ddd;
+	}
+	#banner_ul{
+		width: 800px;
+		height: 400px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+		position: relative;
+	}
+	#banner_ul li{
+		display: inline-block;
+		position: absolute;
+		left: 800px;
+	}
+	#banner_ul img{
+		width: 800px;
+		height: 400px;
+	}
+
+/*	//与透明度变化函数starchange配合使用
+	#img1{
+		
+		z-index: 2;
+	}
+	#img2{
+		z-index: 1;
+	}
+*/
+
+	/*按钮样式*/
+	#button{
+		list-style: none;
+		margin: -50px auto 0 auto;
+		padding: 0;
+		width: 300px;
+		display: flex;
+		justify-content: space-between;
+	}
+	#button li{
+		display: inline-block;
+		border: 3px solid white;
+		height: 12px;
+		width: 12px;
+		border-radius: 9px;
+		opacity: 1;
+		z-index: 3;
+	}
+	#button li:hover{
+		background-color: white;
+	}
+
+
+
+/*///////慕课的js动画效果练习//////////////////////////////////////////////////////*/
+	#outside{
+		width: 300px;
+		height: 100px;
+		margin: 10px;
+		border: 2px solid yellow;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+	}
+	#movebox{
+		margin: 0;
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		position: relative;
+		left: -100px;
+	}
+	#point{
+		width: 20px;
+		height: 40px;
+		background-color: blue;
+		position: absolute;
+		left: 100px;
+		top: 30px;
+	}
+
+	#opacity{
+		width: 100px;
+		height: 100px;
+		background-color: green;
+		filter: alpha(opacity:30);
+		opacity: 0.3;
+	}
+/*////////////////////////////////////////*/
+
+
+
+
+
+/*///////小练习 4  输入提示框//////////////////////////////////////////////////////*/
+
+	#practic4{
+		margin: 100px auto;
+		
+	}
+	#searcher{
+		width: 200px;
+		height: 20px;
+		border: 2px solid #ddd;
+		padding: 6px 10px;
+	}
+
+	#suggession{
+
+	}
+
+
+
+
+
+
+/*///////小练习5 :界面拖拽交互//////////////////////////////////////////////////////*/
+
+
+	#practic5{
+		width: 400px;
+		height: 400px;
+		margin: 0 auto;
+		background-color: #eee;
+		padding: 50px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.container{
+		width: 100px;
+		height: 300px;
+		margin: 0 30px;
+		border: solid 1px black;
+		background-color: white;
+		display: inline-block;
+		position: relative;
+	}
+	.container>div{
+		width: 100px;
+		height: 30px;
+		border: solid 1px black;
+		background-color: red;
+	}
+
+
