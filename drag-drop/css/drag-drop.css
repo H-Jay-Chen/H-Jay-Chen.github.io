@@ -1,0 +1,75 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.phframe{
+	margin: 10px;
+	position: relative;
+	min-width: 900px;
+}
+.photo{
+	list-style: none;
+}
+#photo{
+	margin-right: 390px;
+	border: 3px solid #ddd;
+	padding: 10px 0 10px 0;
+	min-height: 400px;
+}
+.photoframecontent{
+	border: 1px solid #ddd;
+	padding: 5px;
+	font-size: 8px;
+	margin: 0 10px 0 10px;
+	background-color: white;
+}
+.photoframetr{
+	display: inline-block;
+	overflow: hidden;
+}
+.photoframeheader{
+	background-color: #ddd;
+	color: #444;
+}
+h4{
+	font-size: 16px;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+h5{
+	text-align: center;
+	font-size: 12px;
+	line-height: 20px;
+}
+img{
+	margin: 5px auto;
+	display: block;
+}
+.photoframetr span{
+
+}
+.phtrash{
+	float: right;
+	font-size: 10px;
+} 
+#trash{
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-height: 400px;
+	width: 350px;
+	/*margin-left: -512px;*/
+	background-color: #eff;
+}
+
+.highlight{
+	
+	background-color: #ff4 !important;
+}
+.active{
+	background-color: #f5f;
+}

@@ -1,0 +1,5 @@
+来自《Javascript实战》的P346
+
+JQuery.UI的拖放练习
+
+模拟一个回收站
