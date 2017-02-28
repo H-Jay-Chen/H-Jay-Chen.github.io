@@ -1,0 +1,54 @@
+
+
+/*/////////////小练习 3 轮播图///////////////////*/
+	/*图片样式*/
+	#banner{
+		width: 800px;
+		height: 400px;
+		margin: 10px auto;
+		background-color: #ddd;
+	}
+	#banner_ul{
+		width: 800px;
+		height: 400px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+		position: relative;
+	}
+	#banner_ul li{
+		display: inline-block;
+		position: absolute;
+		 left: 800px; 
+	}
+	#banner_ul img{
+		width: 800px;
+		height: 400px;
+	}
+
+
+	/*按钮样式*/
+	#button{
+		list-style: none;
+		margin: -50px auto 0 auto;
+		padding: 0;
+		width: 300px;
+		display: flex;
+		justify-content: space-between;
+	}
+	#button li{
+		display: inline-block;
+		border: 3px solid white;
+		height: 12px;
+		width: 12px;
+		border-radius: 9px;
+		opacity: 1;
+		z-index: 3;
+	}
+	#button li:hover{
+		background-color: white;
+	}
+
+
+

@@ -50,7 +50,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Søk"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,6 +60,53 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-rewrite banner" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/28/rewrite banner/" class="article-date">
+  <time datetime="2017-02-28T03:00:00.000Z" itemprop="datePublished">2017-02-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/IFE-Demo/">IFE-Demo</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/28/rewrite banner/">rewrite banner</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>对前面的一个task0002中的一个轮播图进行重写，用原生JS和JQuery实现同样的效果。<br>对比中发现，利用JQ对象的有关动画效果的一些方法可以较少的代码实现较好轮播效果。<br>在这个过程中，由于使用到定时计数器，所以也啃了一点异步编程的资料，对于js的单线程执行机制也做了一些了解。</p>
+<img src="/../img/task0002_2.jpg" width="400" height="200">
+<p>最初，引发这一系列探索的原因，是由于初期写的banner在浏览器页面切换一段时间后回到页面时轮播图会出现播放顺序混乱的现象。</p>
+<p>后来，查资料发现与浏览器的渲染机制有关。当页面被切换时，定时计数器若未被关闭，则会不停触发产生许多回调函数，而函数对DOM的渲染并未执行，全部累积在队列中，等到页面切回时浏览器的渲染瞬间爆发，导致图片混乱。</p>
+<p>最后，采取一种办法，即页面切换失去焦点时清除定时计数器，回到页面时重新开启定时计数器。</p>
+<p><a href="https://h-jay-chen.github.io/myDEMO/task0002-banner/task0002-banner.html" target="_blank" rel="external">点击预览效果</a></p>
+<p>所用工具：Javascript与jQuery</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/28/rewrite banner/" data-id="cizoyvwpd0001j06w5pj7w1ft" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-drag-drop" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -94,7 +141,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/10/drag-drop/" data-id="cizowu4wc0001go6wcuho8oqk" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2017/02/10/drag-drop/" data-id="cizoyvwpt0003j06wygoplkv2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -137,7 +184,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/28/Waterfall/" data-id="cizowu4w00000go6w2ra3luvp" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2016/12/28/Waterfall/" data-id="cizoyvwpd0000j06weknzc2rf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -183,7 +230,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/28/task0002/" data-id="cizowu4x80005go6ws94x9pmw" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2016/12/28/task0002/" data-id="cizoyvwqt0007j06wdf38slf9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -225,7 +272,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/16/task0001-7-1/" data-id="cizowu4wx0004go6wy4wsvvl8" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2016/12/16/task0001-7-1/" data-id="cizoyvwq90004j06w2uj73bja" class="article-share-link">Share</a>
       
       
     </footer>
@@ -270,7 +317,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/13/hello-world/" data-id="cizowu4ws0003go6w3gdu78th" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2016/12/13/hello-world/" data-id="cizoyvwqn0005j06w8alh694k" class="article-share-link">Share</a>
       
       
     </footer>
@@ -287,7 +334,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categorieën</h3>
+    <h3 class="widget-title">Kategorier</h3>
     <div class="widget">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/IFE-Demo/">IFE-Demo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/otherDemo/">otherDemo</a></li></ul>
     </div>
@@ -302,7 +349,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archieven</h3>
+    <h3 class="widget-title">Arkiv</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li></ul>
     </div>
@@ -312,9 +359,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recente berichten</h3>
+    <h3 class="widget-title">Siste innlegg</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/02/28/rewrite banner/">rewrite banner</a>
+          </li>
         
           <li>
             <a href="/2017/02/10/drag-drop/">drag-drop</a>
@@ -330,10 +381,6 @@
         
           <li>
             <a href="/2016/12/16/task0001-7-1/">task0001_7_1</a>
-          </li>
-        
-          <li>
-            <a href="/2016/12/13/hello-world/">Hello World</a>
           </li>
         
       </ul>
